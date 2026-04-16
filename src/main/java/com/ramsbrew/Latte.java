@@ -1,10 +1,10 @@
 package com.ramsbrew;
-public class Coffee extends Beverage {
-    public Coffee() {
-        this.name = "Coffee";
+public class Latte extends Beverage {
+    public Latte() {
+        this.name = "Latte";
         this.size = "Medium";
         this.milk = "Whole";
-        this.shots = 1;
+        this.shots = 2;
         this.sweetener = "None";
         this.isIced = false;
     }

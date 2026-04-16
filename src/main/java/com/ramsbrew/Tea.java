@@ -1,10 +1,10 @@
 package com.ramsbrew;
-public class Coffee extends Beverage {
-    public Coffee() {
-        this.name = "Coffee";
+public class Tea extends Beverage {
+    public Tea() {
+        this.name = "Tea";
         this.size = "Medium";
-        this.milk = "Whole";
-        this.shots = 1;
+        this.milk = "None";
+        this.shots = 0;
         this.sweetener = "None";
         this.isIced = false;
     }
@@ -14,8 +14,7 @@ public class Coffee extends Beverage {
         sb.append(size).append(" ");
         if (isIced) sb.append("Iced ");
         sb.append(name);
-        sb.append(" | Milk: ").append(milk);
-        sb.append(" | Shots: ").append(shots);
+        if (!milk.equals("None")) sb.append(" | Milk: ").append(milk);
         sb.append(" | Sweetener: ").append(sweetener);
         return sb.toString();
     }
